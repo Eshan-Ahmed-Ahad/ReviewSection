@@ -9,10 +9,10 @@ var testim = document.getElementById("testim"),
     currentActive = 0,
     testimTimer
     ;
-// coding with nick
+
 window.onload = function () {
 
-    // Testim Script
+  
     function playSlide(slide) {
         for (var k = 0; k < testimDots.length; k++) {
             testimContent[k].classList.remove("active");
@@ -38,7 +38,7 @@ window.onload = function () {
             playSlide(currentSlide += 1);
         }, testimSpeed)
     }
-// coding with nick
+
     testimleftArrow.addEventListener("click", function () {
         playSlide(currentSlide -= 1);
     })
